@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.buct.computer.mapper.CulturalRelicInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.buct.computer.model.CulturalRelicInfo">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="discover_time" property="discoverTime" />
+        <result column="image_url" property="imageUrl" />
+        <result column="medium" property="medium" />
+        <result column="artist" property="artist" />
+        <result column="status" property="status" />
+        <result column="detail" property="detail" />
+        <result column="classification" property="classification" />
+        <result column="custom_class" property="customClass" />
+        <result column="location" property="location" />
+        <result column="detail_url" property="detailUrl" />
+        <result column="dimension" property="dimension" />
+        <result column="museum" property="museum" />
+        <result column="like_num" property="likeNum" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, discover_time, image_url, medium, artist, status, detail, classification, custom_class, location, museum, like_num, detail_url, dimension, create_time, update_time
+    </sql>
+
+</mapper>
